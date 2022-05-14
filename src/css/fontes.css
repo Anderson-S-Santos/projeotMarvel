@@ -1,0 +1,10 @@
+@font-face {
+    font-family:'mk1';
+    
+    src: url('../fontes/mk1.ttf');
+}
+
+@font-face {
+    font-family: 'comand';
+    src: url('../fontes/PILOT_COMMAND.otf');
+}
