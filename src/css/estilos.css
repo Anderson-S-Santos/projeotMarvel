@@ -11,7 +11,7 @@ body::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.94;
 }
 
 main {
@@ -57,7 +57,7 @@ main {
 
 .selecao-de-personagens .personagem-grande .nome::before {
     content: '';
-    height: 17px;
+    height: 30px;
     width: 100%;
     position: absolute;
     bottom: -15px;
@@ -68,7 +68,7 @@ main {
     color: var(--cor-padrao);
     font-family: 'comand', sans-serif;
     position: absolute;
-    bottom: -15px;
+    bottom: 0px;
     width: 100%;
     font-size: 27px;
 }
