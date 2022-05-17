@@ -17,18 +17,23 @@ body::before {
 main {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     justify-content: center;
 }
 
-.cabecalho  {    
+.cabecalho {
     z-index: 1;
     display: flex;
     justify-content: center;
+    -webkit-animation: titulo 1.5s linear both;
+    animation: text-flicker-out-glow 2.5s linear both;
+    animation-iteration-count: infinite;
 }
 
+
 .cabecalho .titulo {
-    color: var(--cor-titulo-fraco);
+
+    color: #FFFF00;
     text-transform: uppercase;
     font-size: 52px;
     line-height: 102px;
@@ -52,7 +57,7 @@ main {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .selecao-de-personagens .personagem-grande .nome::before {
@@ -90,15 +95,15 @@ main {
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem {
-     border: 2px solid var(--cor-padrao);
-     background-color: var(--cor-padrao);
-     width: 30%;
-     height: 160px;
-     cursor: pointer;
-     z-index: 2;
-     border-radius: 5px;
-     position: relative;
-     transition: 0.15s ease-in-out;
+    border: 2px solid var(--cor-padrao);
+    background-color: var(--cor-padrao);
+    width: 30%;
+    height: 160px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.15s ease-in-out;
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem img {
@@ -113,11 +118,6 @@ main {
     animation-direction: alternate;
 }
 
-.selecao-de-personagens .lista-de-personagens .personagem.selecionado {
-    border: 2px solid var(--cor-azul-media);
-    animation: c-glowing-blue .3s ease-in-out infinite;
-    animation-direction: alternate;
-}
 
 .selecao-de-personagens .lista-de-personagens .personagem:hover {
     animation: c-glowing-blue .3s ease-in-out infinite;
@@ -128,12 +128,12 @@ main {
 
 .selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado {
     border: 2px solid var(--cor-vermelha-fraca);
-    animation: c-glowing-red  .3s ease-in-out infinite;
+    animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
 .selecao-de-personagens .lista-de-personagens .personagem.jogador-2-selecionado:hover {
-    animation: c-glowing-red  .3s ease-in-out infinite;
+    animation: c-glowing-red .3s ease-in-out infinite;
     animation-direction: alternate;
 }
 
